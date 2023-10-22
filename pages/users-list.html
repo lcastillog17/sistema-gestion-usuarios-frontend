@@ -3,34 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
     <title>Registros</title>
   </head>
   <body>
     <nav id="navigation-menu" class="navigation-menu">
+      <div id="logout-link" class="logout-link">
+        <a href="#" id="logout-button">Cerrar sesión</a>
+      </div>
       <ul>
-        <li><a href="../index.html">Menú Principal</a></li>
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="./users-list.html">Lista de Usuarios</a></li>
         <li><a href="./user.html">Usuario</a></li>
         <li><a href="./profile.html">Perfil</a></li>
       </ul>
-      <div id="logout-link" class="logout-link">
-        <a href="#" id="logout-button">Cerrar sesión</a>
-      </div>
     </nav>
 
-    <h1>Registros</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Usuario</th>
-          <th>Correo Electrónico</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody id="user-list">
-        <!-- Aquí se llenarán dinámicamente los registros -->
-      </tbody>
-    </table>
+    <div class="container">
+      <h1>Registros</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Correo Electrónico</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="user-list">
+          <!-- Aquí se llenarán dinámicamente los registros -->
+        </tbody>
+      </table>
+    </div>
+
 
     <script src="../scripts/usersList.js"></script>
   </body>

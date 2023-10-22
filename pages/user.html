@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
     <title>Usuario</title>
   </head>
   <body>
     <nav id="navigation-menu" class="navigation-menu">
+      <div id="logout-link" class="logout-link">
+        <a href="#" id="logout-button">Cerrar sesión</a>
+      </div>
       <ul>
-        <li><a href="../index.html">Menú Principal</a></li>
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="./users-list.html">Lista de Usuarios</a></li>
         <li><a href="./user.html">Usuario</a></li>
         <li><a href="./profile.html">Perfil</a></li>
       </ul>
-      <div id="logout-link" class="logout-link">
-        <a href="#" id="logout-button">Cerrar sesión</a>
-      </div>
     </nav>
 
-    <h1>Usuario</h1>
-    <form id="user-form">
-      <input type="text" name="id" id="id" hidden />
+    <div class="container">
+      <h1>Usuario</h1>
+      <form id="user-form">
+        <input type="text" name="id" id="id" hidden />
 
-      <label for="username">Nombre de usuario:</label>
-      <input type="text" id="username" required /><br />
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" required /><br />
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" required /><br />
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required /><br />
 
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" required /><br />
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required /><br />
 
-      <label for="roles">Roles:</label>
-      <input type="text" id="roles" readonly /><br />
+        <label for="roles">Roles:</label>
+        <input type="text" id="roles" readonly /><br />
 
-      <button type="submit" id="updateButton">Actualizar</button>
-    </form>
+        <button type="submit" id="updateButton">Guardar</button>
+      </form>
+    </div>
 
     <script src="../scripts/user.js"></script>
   </body>

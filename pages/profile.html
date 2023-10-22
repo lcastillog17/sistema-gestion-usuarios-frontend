@@ -3,42 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/common.css" />
     <title>Perfil</title>
   </head>
   <body>
     <nav id="navigation-menu" class="navigation-menu">
+      <div id="logout-link" class="logout-link">
+        <a href="#" id="logout-button">Cerrar sesión</a>
+      </div>
       <ul>
-        <li><a href="../index.html">Menú Principal</a></li>
+        <li><a href="../index.html">Inicio</a></li>
         <li><a href="./users-list.html">Lista de Usuarios</a></li>
         <li><a href="./user.html">Usuario</a></li>
         <li><a href="./profile.html">Perfil</a></li>
       </ul>
-      <div id="logout-link" class="logout-link">
-        <a href="#" id="logout-button">Cerrar sesión</a>
-      </div>
     </nav>
 
-    <h1>Perfil</h1>
-    <form id="profile-form">
-        <input type="text" name="id" id="id" hidden />
-
-        <label for="user_id">ID de Usuario:</label>
-        <input type="text" id="user_id" name="user_id" required readonly><br><br>
-
-        <label for="first_name">Nombre:</label>
-        <input type="text" id="first_name" name="first_name" required><br><br>
-
-        <label for="last_name">Apellido:</label>
-        <input type="text" id="last_name" name="last_name" required><br><br>
-
-        <label for="birthdate">Fecha de Nacimiento:</label>
-        <input type="date" id="birthdate" name="birthdate" required><br><br>
-
-        <label for="profile_picture">URL de la Foto de Perfil:</label>
-        <input type="text" id="profile_picture" name="profile_picture"><br><br>
-
-        <input type="submit" value="Enviar">
-    </form>
+    <div class="container">
+      <h1>Perfil</h1>
+      <form id="profile-form">
+          <input type="text" name="id" id="id" hidden />
+  
+          <label for="user_id">ID de Usuario:</label>
+          <input type="text" id="user_id" name="user_id" required readonly><br><br>
+  
+          <label for="first_name">Nombre:</label>
+          <input type="text" id="first_name" name="first_name" required><br><br>
+  
+          <label for="last_name">Apellido:</label>
+          <input type="text" id="last_name" name="last_name" required><br><br>
+  
+          <label for="birthdate">Fecha de Nacimiento:</label>
+          <input type="date" id="birthdate" name="birthdate" required><br><br>
+  
+          <label for="profile_picture">URL de la Foto de Perfil:</label>
+          <input type="text" id="profile_picture" name="profile_picture"><br><br>
+  
+          <input type="submit" value="Guardar">
+      </form>
+    </div>
 
     <script src="../scripts/profile.js"></script>
   </body>

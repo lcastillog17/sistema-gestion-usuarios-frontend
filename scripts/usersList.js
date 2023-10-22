@@ -45,9 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
                   <td>${user.username}</td>
                   <td>${user.email}</td>
                   <td>
-                      <button onclick="deleteUser('${user._id}')">Eliminar Usuario</button>
-                      <button onclick="viewUser('${user._id}')">Ver Usuario</button>
-                      <button onclick="viewProfile('${user._id}')">Ver Perfil</button>
+                      <button class="action-link" onclick="deleteUser('${user._id}')">Eliminar Usuario</button>
+                      <button class="action-link" onclick="viewUser('${user._id}')">Ver Usuario</button>
+                      <button class="action-link" onclick="viewProfile('${user._id}')">Ver Perfil</button>
   
                   </td>
               `;
