@@ -201,3 +201,20 @@ td:last-child {
   background-color: #555;
   color: #fff;
 }
+
+.link-container {
+  margin: auto;
+  text-align: center;
+}
+
+.simple-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.simple-link:hover {
+  color: #0056b3;
+}
